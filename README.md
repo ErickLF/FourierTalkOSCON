@@ -1,45 +1,35 @@
-FourierTalkOSCON
-================
+# Presentación tomada de **FourierTalkOSCON**
 
-Presentation Materials for my [Sound Analysis with the Fourier Transform and Python](http://www.oscon.com/oscon2013/public/schedule/detail/28946) OSCON 2013 Talk.
 
----
-
-### Link to this: http://tinyurl.com/fourierpython
+Material de la plática [Sound Analysis with the Fourier Transform and Python](http://www.oscon.com/oscon2013/public/schedule/detail/28946) OSCON 2013 Talk.
 
 ---
 
-# Presentation Index
-
-* [01_Introduction.ipynb](http://nbviewer.ipython.org/url/raw.github.com/calebmadrigal/FourierTalkOSCON/master/01_Introduction.ipynb)
-* [02_NatureOfWaves.ipynb](http://nbviewer.ipython.org/url/raw.github.com/calebmadrigal/FourierTalkOSCON/master/02_NatureOfWaves.ipynb)
-* [03_FourierTransform.ipynb](http://nbviewer.ipython.org/url/raw.github.com/calebmadrigal/FourierTalkOSCON/master/03_FourierTransform.ipynb)
-* [04_WaveDeconvolution.ipynb](http://nbviewer.ipython.org/url/raw.github.com/calebmadrigal/FourierTalkOSCON/master/04_WaveDeconvolution.ipynb)
-* [05_RotationWithE.ipynb](http://nbviewer.ipython.org/url/raw.github.com/calebmadrigal/FourierTalkOSCON/master/05_RotationWithE.ipynb)
-* [06_FFTInPython.ipynb](http://nbviewer.ipython.org/url/raw.github.com/calebmadrigal/FourierTalkOSCON/master/06_FFTInPython.ipynb)
-* [07_SeeingSound.ipynb](http://nbviewer.ipython.org/url/raw.github.com/calebmadrigal/FourierTalkOSCON/master/07_SeeingSound.ipynb)
-* [08_STFT.ipynb](http://nbviewer.ipython.org/url/raw.github.com/calebmadrigal/FourierTalkOSCON/master/08_STFT.ipynb)
-* [09_AudioFiltering.ipynb](http://nbviewer.ipython.org/url/raw.github.com/calebmadrigal/FourierTalkOSCON/master/09_AudioFiltering.ipynb)
-* [10_Conclusion.ipynb](http://nbviewer.ipython.org/url/raw.github.com/calebmadrigal/FourierTalkOSCON/master/10_Conclusion.ipynb)
+### Puedes consultar el material original en: http://tinyurl.com/fourierpython
 
 ---
 
-To run locally, you must use this command to run ipython notebook: `ipython notebook --pylab inline`
 
-You will also need to install these python libraries (along with their C dependencies):
+# Indice de libretas:
 
-* numpy
-* scipy
-* matplotlib
-* ipython
-* scikits.audiolab
+1. [Introducción (solo texto)](01_Introduction.ipynb)
+2. [Naturaleza de las ondas](02_NatureOfWaves.ipynb)
+3. [Transformada de Fouruer](03_FourierTransform.ipynb)
+4. [Convolución y deconvolución de señales](04_WaveDeconvolution.ipynb)
+5. [La formula de Euler y representación circular de señales](05_RotationWithE.ipynb)
+6. [Transformada rápida de Fouruer en *python*](06_FFTInPython.ipynb)
+7. [Analizando señales de audio](07_SeeingSound.ipynb)
+8. [Análisis y tratamiento por ventanas de tiempo](08_STFT.ipynb)
+9. [Filtros pasa bajo y pasa alto](09_AudioFiltering.ipynb)
+10. [Conclusiones (texto y enlaces del autor)](http://nbviewer.ipython.org/url/raw.github.com/calebmadrigal/FourierTalkOSCON/master/10_Conclusion.ipynb)
 
 ---
 
-To record audio on your laptop, you can use [sox](http://sox.sourceforge.net/) (note that `rec` is a commnad installed with `sox`).  Here are 2 useful sox commands
+Para grabar audio en tu computadora, usando linea de comandos se puede utilizar la utilería [SoX](http://sox.sourceforge.net).
+
+Los dos comandos más utiles son los siguientes:
 
 * `rec -r 44100 -c 2 -b 16 A4.wav`
-    - records at 44100 samples per sec, 2 channels, and 16 bits per sample
+    - Graba a 44100 muestras por segundo, 2 canales, 16 bits por muestra
 * `sox audio_2channels.wav audio_1channel.wav channels 1`
-    - converts from 2 channels to 1 channel
-
+    - Convierte de dos canales a uno
